@@ -1,0 +1,440 @@
+
+
+  body {
+  font-family:"calibri light";
+  color:rgb(152, 6, 6);
+  margin: 0px;
+  background-color: hsl(40, 100%, 97%);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+header {
+  display:flex;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  background-color: hsl(28, 98%, 16%);
+}
+
+
+.logo {
+  display: flex;
+  align-items: center; 
+  color: white;
+}
+
+.logo img{
+  height: 65px;
+  margin-right: 15px;
+  margin-left: 35px;
+}
+
+.logo-nombre{
+  font-size: 20px;
+  font-weight: 200;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 200;
+  padding-right: 30px;
+  color: white;
+  transition: 0.4s;
+}
+
+nav a:hover {
+  color:rgb(247, 252, 123);
+}
+
+.mostrar-menu, .esconder-menu{
+  font-size:30px;
+  cursor: pointer;
+  transition: 0.4s;
+  display: none;
+  color: #fff;
+}
+
+.mostrar-menu{
+  order:1;
+}
+
+#check{
+  display: none;
+}
+
+.slider-box {
+  width: 90%;
+  height: auto;
+  margin: 45px auto 35px;
+  overflow: hidden; 
+}
+
+.slider-box ul {
+  display: flex;
+  padding: 0;
+  width: 300%;
+  animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-box li {
+  width: 100%;
+  list-style: none;
+  position: relative;
+}
+
+.texto h1{
+  margin-bottom: 25px;
+  font-size: 45px;
+  font-family:'Poppins', sans-serif;-serif;
+}
+
+.texto {
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+  padding: 0 250px;
+  top: 250px;
+  color:#000000;
+}
+
+.slider-box img{
+  width: 100%;  
+}
+
+
+
+.texto p{
+  font-family:'Poppins', sans-serif;-serif;
+  padding: auto;
+  color: rgb(30, 30, 24);
+  text-shadow: 4px 4px 5px rgb(254, 248, 248);
+}
+
+@keyframes slide {
+  0% {margin-left: 0;}
+  20% {margin-left: 0;}
+  25% {margin-left: -100%;}
+  45% {margin-left: -100%;}
+  50% {margin-left: -200%;}
+  70% {margin-left: -200%;}
+  75% {margin-left: -200%;}
+  100% {margin-left: -200%;}
+}
+
+.main{
+  margin-top: 15vh;
+}
+.mision-vision {
+    color: rgb(131, 0, 24);
+    text-align: center;
+    font-size: 28px;
+}
+
+.parrafomv {
+    position: relative;
+    color: black;
+    font-size: 16px;
+    line-height: 1.2em;
+    text-align: center;
+    padding:0px 20% 0px;   
+}
+
+.servicios {
+    text-align: center;
+    color: rgb(162, 7, 15);
+    font-weight: 10px;
+}
+
+.tramites-registrales {
+  width: 95%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+
+.img-registrales { 
+  height: 40px;;
+}
+
+.titulo-registral {
+  font-family: "calibri light";
+  font-size: 15px;
+}
+
+.contenedor{
+  background-color: hwb(22 3% 67% / 0.842);
+  padding-bottom: 3%;
+  padding-top: auto;
+  width: 100%;
+  
+}
+
+.visitanos{
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  margin: 35px auto;
+  padding-top: 35px; 
+  font-size: 25px;
+  color: aliceblue;
+  font-family: sans-serif;
+}
+
+.mapas{
+  justify-content: space-around;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.imagen-port{
+  width: 40%;
+  margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  height: 400px;
+  box-shadow: 0 10px 20px 0 rgba(42, 36, 36, 0.838);
+}
+
+.imagen-port > iframe{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hover-galery{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: hsla(62, 100%, 89%, 0.907);
+  transition: transform .5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 25px;
+  color: rgb(215, 33, 33);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.hover-galery img{
+  width: 45px;  
+}
+
+
+.imagen-port:hover .hover-galery{
+  transform: scale(0);
+}
+
+footer{
+  background: rgb(8, 8, 8);
+  padding-top: 50px;
+}
+
+.container-footer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.contenido-footer{
+    width: 40%;
+    padding: 0px 85px;
+    justify-content: center;
+
+}
+
+.container-footer h3{
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-align: center;
+  color: white;
+}
+
+.contenido-footer p{
+  text-align: justify;
+  width: 50%;
+  margin: auto;
+  padding: 7px;
+  color: white;
+}
+
+.contenido-footer ul{
+  text-align: center;
+}
+.social-icons{
+  text-align: center;
+  padding: 0;
+}
+
+.social-icons li{
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
+}
+
+.social-icons i{
+  font-size: 30px;
+  color: white;
+}
+.hover-galery p{
+  font-size: 15px;
+  font-weight: bold;
+font-family: "calibri light";
+}
+
+.botom-bar{
+  background: rgb(8, 8, 8);
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 50px;
+
+}
+
+.botom-bar p{
+  color: rgb(255, 255, 255);
+  margin: 0;
+  font-size: 15px;
+  padding: 2px;
+}
+
+.wsp {
+  color: white;
+}
+.wsp:hover {
+  color: #25d366;
+}
+
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  bottom: 40px;
+  right: 40px;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 999;
+}
+
+.fa-whatsapp{
+  font-size: 60px;
+}
+
+.float:hover{
+  background-color: #25d366;
+}
+
+
+@media(max-width:768px){
+
+  .slider-box {
+  width: 100%;
+  }
+
+  .texto h1{
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+
+  .texto {
+    top: 50px;
+    padding: 0 25px;
+  }
+  
+  .texto p{
+    font-size: 13px;
+  }
+
+  .mostrar-menu, 
+  .esconder-menu{
+    display: block;
+  }
+
+  .menu{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background:#512601;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 100px 0px;
+    z-index: 100;
+    transition: 0.8s;
+  }
+  
+  .menu a{
+    display: block;
+    padding: 20px;
+  }
+
+  .esconder-menu{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+
+  #check:checked ~ .menu{
+    right: 0;
+  }
+
+  .mision-vision{
+    padding-top: 35px;
+  }
+
+  .texto{
+    width: 100%;
+    display: block;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .container-footer{
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+
+  }
+
+  .mapas{
+    
+    width: 100%;
+    align-items: center;
+    flex-direction: column ;
+  }
+
+  .tramites-registrales{
+    flex-direction: column;
+
+  }
+ 
+  .servicios {
+    margin: 0;  }
+
+    .slider-box{
+      padding-bottom: 0px;
+    }
+
+    .contenido-footer p{
+      text-align: center;
+    }
+  
+}
